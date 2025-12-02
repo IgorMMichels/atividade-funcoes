@@ -13,10 +13,17 @@ colônia inicialmente com 30 bactérias.
 */
 
 
-// Função
+function populacaoBacterias(n, t) {
+  for (let i = 1; i < t; i += 2) {
+    n *= 3
+  }
 
+  return n
+}
 
-// Aplicação
+let resultado = (populacaoBacterias(30, 30).toLocaleString('pt-BR'));
+
+document.write(`A população de bactérias em 30 dias será: ${resultado}.`);
 
 
 // Mostra resultado
